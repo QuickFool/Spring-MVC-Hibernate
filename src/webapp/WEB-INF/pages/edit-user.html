@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Edit User</title>
 </head>
 <body>
 <h1>Edit User</h1>
 <form th:action="@{/users/edit}" method="post">
-    <input type="hidden" name="id" th:field="*{id}">
+    <input type="hidden" name="id">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" th:field="*{name}" required><br><br>
-    <!-- Add other fields as needed -->
+    <input type="text" id="name" name="name" required><br><br>
     <input type="submit" value="Save Changes">
 </form>
 </body>
