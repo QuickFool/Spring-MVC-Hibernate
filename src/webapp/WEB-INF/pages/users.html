@@ -18,8 +18,8 @@
         <td th:text="${user.id}"></td>
         <td th:text="${user.name}"></td>
         <td>
-            <a th:href="@{/users/edit/{id}(id=${user.id})}">Edit</a>
-            <a th:href="@{/users/delete/{id}(id=${user.id})}">Delete</a>
+            <a th:href="@{/users/edit(id=${user.id})}">Edit</a>
+            <a th:href="@{/users/delete(id=${user.id})}">Delete</a>
         </td>
     </tr>
     </tbody>
