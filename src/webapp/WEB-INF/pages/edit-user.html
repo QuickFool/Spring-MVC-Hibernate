@@ -6,9 +6,9 @@
 <body>
 <h1>Edit User</h1>
 <form th:action="@{/users/edit}" method="post">
-    <input type="hidden" name="id">
+    <input type="hidden" name="id" th:value="${user.id}">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
+    <input type="text" id="name" name="name" th:value="${user.name}" required><br><br>
     <input type="submit" value="Save Changes">
 </form>
 </body>
